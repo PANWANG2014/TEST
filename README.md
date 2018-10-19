@@ -122,7 +122,7 @@ Those three files should be provided by the users, which contains the paired exp
 
 	* Curated cancer-related miRNAs and genes<br>
 
-	| Data file | Descriptions | Element counts |
+	| Data file | Descriptions | Molecule counts |
 	|:-------------:|:-------------|:-----:|
 	| _Oncomirs_ | compiled from MNDR v2.0 database | 399 |
 	| _miRNA biomarkers_ | miRNAs that are significantly correlated with tumor development, tumor staging, tumor grade and patient survival | 288 |
