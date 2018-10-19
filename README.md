@@ -59,7 +59,7 @@ In order to run the current version of miRTIGO, the users should provide two dat
 
 	The remainder of the file contains data for each of the mRNAs. There is one line for each mRNA. Each line contains the mRNA name and a value for each sample in the dataset.<br>
 
-3. **Sample-to-sample file** generally contains two columns, which shows the corresponding relationship of the sample identifiers in mirna expression file and mrna expression file. It also serves as a index to denote which samples we choose to analyze. It is organized as follows:<br>
+3. **Sample-to-sample file** generally contains two columns, which shows the corresponding relationship of the sample identifiers in miRNA expression file and mRNA expression file. It also serves as a index to denote which samples we choose to analyze. It is organized as follows:<br>
 
 	| miRNA | Gene | 
 	| :-------------: |:-------------:| 
@@ -75,7 +75,7 @@ In order to run the current version of miRTIGO, the users should provide two dat
 	The remainder of the file contains sample identifiers used in the miRNA and mRNA expression files. There is one line for each sample. Each line contains the identifiers for that sample.<br>
 
 #### <a name="5">3.2 Script Execution</a><br>
-miRTIGO is written in R. Thus the users first need to download and install the R software on the platform (refer to [https://www.r-project.org](https://www.r-project.org/) for details). [The code](https://github.com/PANWANG2014/miRTIGO/blob/master/miRTIGO_algorithm/miRTIGO.R) of miRTIGO consists of three parts, namely, 'FUNCTIONS', 'DATA INPUT' and 'MAIN PROGRAM'. The users only need to focus on the 'DATA INPUT' part and fill in the relevant files described as follows:<br>
+miRTIGO is written in R. Thus the users first need to download and install the R software on the platform (refer to [R-project](https://www.r-project.org/) for details). [The code](https://github.com/PANWANG2014/miRTIGO/blob/master/miRTIGO_algorithm/miRTIGO.R) of miRTIGO consists of three parts, namely, 'FUNCTIONS', 'DATA INPUT' and 'MAIN PROGRAM'. The users only need to focus on the 'DATA INPUT' part and fill in the relevant files described as follows:<br>
 	
 >178 mrna = as.matrix(read.table("`mrna_list.txt`", head = TRUE, sep = "\t"))<br>
 >179 mirna = as.matrix(read.table("`mirna_list.txt`", head = TRUE, sep = "\t"))<br>
@@ -101,7 +101,7 @@ Those three files should be provided by the users, which contains the paired exp
 	|:-------------:|:-------------| 
 	| wMRE\_all.txt | _cumulative weighted context++ scores_ (weighted miRNA response elements, wMREs) between an miRNA and mRNA |
 	| qMRE\_all.txt | number of target sites (quantitative miRNA response elements, qMREs) on one mRNA for one miRNA |
-	| conserved\_qMRE.txt | number of conserved target sites on one mRNA for one miRNA|
+	| conserved\_qMRE.txt | number of conserved target sites(qMREs) on one mRNA for one miRNA|
 	| mirna\_list.txt | miRNA identifiers used in the above files|
 	| mrna\_list.txt | mRNA identifiers used in the above files|
 
@@ -112,21 +112,21 @@ Those three files should be provided by the users, which contains the paired exp
 
 	| Data file | Descriptions | MMI counts |
 	|:-------------:|:-------------|:-----:|
-	| V1 | Tarbase v7.0 | 307,010 |
-    | V2 | miRTarbase v7.0 | 380,639 |
-	| V3 | starBase v2.0 | 26,009 |
-	| V4 | strong evidence-supported | 9,642 |
-	| V5 | miRNA transfection-supported | 22,325 |
-	| V6 | CLASH-supported | 17,293 |
+	| _V1_ | Tarbase v7.0 | 307,010 |
+    | _V2_ | miRTarbase v7.0 | 380,639 |
+	| _V3_ | compiled from starBase v2.0 | 26,009 |
+	| _V4_ | strong evidence-supported | 9,642 |
+	| _V5_ | miRNA transfection-supported | 22,325 |
+	| _V6_ | CLASH-supported | 17,293 |
 
 
 	* Curated cancer-related miRNAs and genes<br>
 
 	| Data file | Descriptions | Element counts |
 	|:-------------:|:-------------|:-----:|
-	| Oncomirs | compiled from MNDR v2.0 database | 399 |
-	| miRNA biomarkers | contains miRNAs that are significantly correlated with tumor development, tumor staging, tumor grade and patient survival | 288 |
-	| Cancer genes | downloaded from COSMIC database | 616 |
+	| _Oncomirs_ | compiled from MNDR v2.0 database | 399 |
+	| _miRNA biomarkers_ | miRNAs that are significantly correlated with tumor development, tumor staging, tumor grade and patient survival | 288 |
+	| _Cancer genes_ | COSMIC database | 616 |
 
 * Input data files<br>
 
