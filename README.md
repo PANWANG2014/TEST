@@ -92,38 +92,30 @@ Those three files should be provided by the users, which contains the paired exp
 2. Generally, all these [codes](https://github.com/PANWANG2014/miRTIGO/tree/master/Source_codes_for_experiments) are arranged into three parts as 'FUNCTIONS', 'INPUT DATA' and 'MAIN PROGRAM'. The users need to download and fill in the relevant input files before implementing corresponding analyses.<br>
 3. Files required for the reproduction of the experiments can be broadly classified into three categories:<br>
 
-* Files for executing the algorithms<br>
-
-	| Data file | Descriptions | 
-	|:-------------:|:-------------| 
-	| wMRE\_all.txt | _cumulative weighted context++ scores_ (weighted miRNA response elements, wMREs) between an miRNA and mRNA |
-	| qMRE\_all.txt | number of target sites (quantitative miRNA response elements, qMREs) on one mRNA for one miRNA |
-	| conserved\_qMRE.txt | number of conserved target sites (qMREs) on one mRNA for one miRNA|
-	| mirna\_list.txt | miRNA identifiers used in the above files|
-	| mrna\_list.txt | mRNA identifiers used in the above files|
-
-	All these files are compiled from [TargetScan v7.0](http://www.targetscan.org/cgi-bin/targetscan/data_download.cgi?db=vert_70).
-
-* Files for evaluation analyses<br>
+* Files needed to perform evaluation analyses<br>
 	* Experimentally confirmed MMIs<br>
 
-	| Data file | Descriptions | MMI counts |
+	| Data file | Descriptions | validated MMI counts |
 	|:-------------:|:-------------|:-----:|
-	| _V1_ | Tarbase v7.0 | 307,010 |
-    | _V2_ | miRTarbase v7.0 | 380,639 |
-	| _V3_ | compiled from starBase v2.0 | 26,009 |
-	| _V4_ | strong evidence-supported | 9,642 |
-	| _V5_ | miRNA transfection-supported | 22,325 |
-	| _V6_ | CLASH-supported | 17,293 |
+	| _V1_ | [TarBase v7.0](http://carolina.imis.athena-innovation.gr/diana_tools/web/index.php?r=tarbasev8%2Findex) | 307,010 |
+        | _V2_ | [miRTarbase v7.0](http://mirtarbase.mbc.nctu.edu.tw/php/index.php) | 380,639 |
+	| _V3_ | high-confidence set compiled from [miRTarbase](http://carolina.imis.athena-innovation.gr/diana_tools/web/index.php?r=tarbasev8%2Findex), [miRecord](http://mirecords.umn.edu/miRecords) and [oncomiRDB](http://bioinfo.au.tsinghua.edu.cn/oncomirdb/) | 9642 |
+        | _V4_ | [starBase v2.0](http://starbase.sysu.edu.cn/starbase2/index.php) | 10,028 |
+	
+    * Curated miRNA transfection experiments<br>
 
+    | Data file | Descriptions |
+	|:-------------:|:-------------|
+	| _T1_ | It contains 106 unique miRNA transfections and was originally collected by [Li _et al_](https://academic.oup.com/bioinformatics/article/30/5/621/247621) |
+	| _T2_ | It contains 23 unique miRNA transfections and was originally collected by [Gumienny R _et al_](https://academic.oup.com/nar/article/43/3/1380/2411948)|
 
 	* Curated cancer-related miRNAs and genes<br>
 
 	| Data file | Descriptions | Molecule counts |
 	|:-------------:|:-------------|:-----:|
-	| _Oncomirs_ | oncomirs compiled from MNDR v2.0 database | 399 |
-	| _miRNA biomarkers_ | miRNAs that are significantly correlated with tumor development, tumor staging, tumor grade and patient survival | 288 |
-	| _Cancer genes_ | COSMIC database | 616 |
+	| _miRNA biomarkers_ | miRNAs that are significantly correlated with tumor development, tumor staging, tumor grade and patient survival defined by [oncomiR](http://www.oncomir.org) | 288 |
+	| _oncomirs_ | oncomirs compiled from [MNDR v2.0](http://www.rna-society.org/mndr/) database | 399 |
+        | _Cancer genes_ | [COSMIC](https://cancer.sanger.ac.uk/census) database | 616 |
 
 * Input data files<br>
 
