@@ -96,25 +96,25 @@ Those three files should be provided by the users, which contains the paired exp
 
 	| Data file | Descriptions | validated MMI counts |
 	|:-------------:|:-------------|:-----:|
-	| _V1_ | [TarBase v7.0](http://carolina.imis.athena-innovation.gr/diana_tools/web/index.php?r=tarbasev8%2Findex) | 307,010 |
-    | _V2_ | [miRTarbase v7.0](http://mirtarbase.mbc.nctu.edu.tw/php/index.php) | 380,639 |
-	| _V3_ | high-confidence set compiled from [miRTarbase](http://carolina.imis.athena-innovation.gr/diana_tools/web/index.php?r=tarbasev8%2Findex), [miRecord](http://mirecords.umn.edu/miRecords) and [oncomiRDB](http://bioinfo.au.tsinghua.edu.cn/oncomirdb/) | 9642 |
-    | _V4_ | [starBase v2.0](http://starbase.sysu.edu.cn/starbase2/index.php) | 10,028 |
+	| V1 | [TarBase v7.0](http://carolina.imis.athena-innovation.gr/diana_tools/web/index.php?r=tarbasev8%2Findex) | 307,010 |
+    | V2 | [miRTarbase v7.0](http://mirtarbase.mbc.nctu.edu.tw/php/index.php) | 380,639 |
+	| V3 | high-confidence set compiled from [miRTarbase](http://carolina.imis.athena-innovation.gr/diana_tools/web/index.php?r=tarbasev8%2Findex), [miRecord](http://mirecords.umn.edu/miRecords) and [oncomiRDB](http://bioinfo.au.tsinghua.edu.cn/oncomirdb/) | 9642 |
+    | V4 | [starBase v2.0](http://starbase.sysu.edu.cn/starbase2/index.php) | 10,028 |
 	
     * Curated miRNA transfection experiments<br>
 
     | Data file | Descriptions |
 	|:-------------:|:-------------|
-	| _T1_ | It contains 106 unique miRNA transfections and was originally collected by [Li _et al_](https://academic.oup.com/bioinformatics/article/30/5/621/247621) |
-	| _T2_ | It contains 23 unique miRNA transfections and was originally collected by [Gumienny R _et al_](https://academic.oup.com/nar/article/43/3/1380/2411948)|
+	| T1 | It contains 106 unique miRNA transfections and was originally collected by [Li _et al_](https://academic.oup.com/bioinformatics/article/30/5/621/247621) |
+	| T2 | It contains 23 unique miRNA transfections and was originally collected by [Gumienny R _et al_](https://academic.oup.com/nar/article/43/3/1380/2411948)|
 
 	* Curated cancer-related miRNAs and genes<br>
 
 	| Data file | Descriptions | Molecule counts |
 	|:-------------:|:-------------|:-----:|
-	| _miRNA biomarkers_ | miRNAs that are significantly correlated with tumor development, tumor staging, tumor grade and patient survival defined by [oncomiR](http://www.oncomir.org) | 288 |
-	| _oncomirs_ | oncomirs compiled from [MNDR v2.0](http://www.rna-society.org/mndr/) database | 399 |
-    | _Cancer genes_ | [COSMIC](https://cancer.sanger.ac.uk/census) database | 616 |
+	| miRNA biomarkers | miRNAs obtained from [oncomiR](http://www.oncomir.org) that are simultaneously correlated with tumor development, tumor staging, tumor grade and patient survival | 288 |
+	| oncomirs | high-confidence cancer associated miRNAs compiled from [MNDR v2.0](http://www.rna-society.org/mndr/) database | 399 |
+    | Cancer genes | [COSMIC](https://cancer.sanger.ac.uk/census) database | 616 |
 
 * Input data files<br>
 
