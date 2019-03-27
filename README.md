@@ -143,6 +143,5 @@ Those three files should be provided by the users, which contains the paired exp
 ### <a name="6">4. Examples of predicted results</a><br>
 miRACLe provides both population-level result and individual-level result, and it outputs the top 1% ranked MMIs in default. To show as an example, [Here](https://github.com/PANWANG2014/miRTIGO/blob/master/Predicted_results.7z) we provide the detailed population-level results of the top 5000 predicted MMIs for each of the 32 TCGA cancer types and the individual-level results of the top 5000 predictions for the NCI-60 cell panel.
 
-
 ---
-Here we provide the detailed population-level results of the top 5000 predicted miRNA-mRNA interactions for each of the 32 TCGA cancer types and the sample-level results of the top 5000 predictions for the 59 cancer cell lines from the NCI-60 cell panel. 
+
