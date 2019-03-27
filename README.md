@@ -87,7 +87,7 @@ Those three files serve as the basis to define the sequence matching scores betw
 Those three files should be provided by the users, which contains the paired expression profiles of miRNAs and mRNAs of the samples that they are interested in. Note that the input miRNA/mRNA file should be transformed into a non-negative matrix, in order for the main program to execute correctly. To achieve optimal prediction on the RNA sequencing data, we strongly recommend that users provide log2 transformed normalized counts (e.g. RSEM or RPM) as the input for our program.
 
 ---
-### <a name="5">3. Reproduction of the miRACLe paper`s experiments</a><br>
+### <a name="5">3. Reproduction of the miRACLe paper`s analyses</a><br>
 1. The codes to reproduce these experiments in the paper are written in R and should be executed in the corresponding software environment.<br> 
 2. Generally, all these [codes](https://github.com/PANWANG2014/miRTIGO/tree/master/Source_codes_for_experiments) are arranged into three parts as 'FUNCTIONS', 'INPUT DATA' and 'MAIN PROGRAM'. The users need to download and fill in the relevant input files before implementing corresponding analyses.<br>
 3. Files required for the reproduction of the experiments can be broadly classified into three categories:<br>
