@@ -92,13 +92,26 @@ Those three files should be provided by the users, which contains the paired exp
 2. Generally, all these [codes](https://github.com/PANWANG2014/miRTIGO/tree/master/Source_codes_for_experiments) are arranged into three parts as 'FUNCTIONS', 'INPUT DATA' and 'MAIN PROGRAM'. The users need to download and fill in the relevant input files before implementing corresponding analyses.<br>
 3. Files required for the reproduction of the experiments can be broadly classified into three categories:<br>
 
+* Files needed to execute the algorithms<br>
+
+	| Data file | Descriptions | 
+	|:-------------:|:-------------| 
+	| wMRE\_all.txt | _cumulative weighted context++ scores_ (weighted miRNA response elements, wMREs) between an miRNA and mRNA |
+	| qMRE\_all.txt | number of target sites (quantitative miRNA response elements, qMREs) on one mRNA for one miRNA |
+	| conserved\_qMRE.txt | number of conserved target sites (qMREs) on one mRNA for one miRNA|
+	| mirna\_list.txt | miRNA identifiers used in the above files|
+	| mrna\_list.txt | mRNA identifiers used in the above files|
+
+	All these files are compiled from [TargetScan v7.0](http://www.targetscan.org/cgi-bin/targetscan/data_download.cgi?db=vert_70).
+	
+* Files needed to perform evaluation analyses<br>
 	* Experimentally confirmed MMIs<br>
 
 	| Data file | Descriptions | validated MMI counts |
 	|:-------------:|:-------------|:-----:|
 	| V1 | [TarBase v7.0](http://carolina.imis.athena-innovation.gr/diana_tools/web/index.php?r=tarbasev8%2Findex) | 307,010 |
     | V2 | [miRTarbase v7.0](http://mirtarbase.mbc.nctu.edu.tw/php/index.php) | 380,639 |
-	| V3 | high-confidence set compiled from [miRTarbase](http://carolina.imis.athena-innovation.gr/diana_tools/web/index.php?r=tarbasev8%2Findex), [miRecord](http://mirecords.umn.edu/miRecords) and [oncomiRDB](http://bioinfo.au.tsinghua.edu.cn/oncomirdb/) | 9642 |
+	| V3 | high-confidence set compiled from [miRTarbase](http://carolina.imis.athena-innovation.gr/diana_tools/web/index.php?r=tarbasev8%2Findex), [miRecords](http://mirecords.umn.edu/miRecords) and [oncomiRDB](http://bioinfo.au.tsinghua.edu.cn/oncomirdb/) | 9642 |
     | V4 | [starBase v2.0](http://starbase.sysu.edu.cn/starbase2/index.php) | 10,028 |
 	
     * Curated miRNA transfection experiments<br>
