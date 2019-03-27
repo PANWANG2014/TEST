@@ -92,15 +92,14 @@ Those three files should be provided by the users, which contains the paired exp
 2. Generally, all these [codes](https://github.com/PANWANG2014/miRTIGO/tree/master/Source_codes_for_experiments) are arranged into three parts as 'FUNCTIONS', 'INPUT DATA' and 'MAIN PROGRAM'. The users need to download and fill in the relevant input files before implementing corresponding analyses.<br>
 3. Files required for the reproduction of the experiments can be broadly classified into three categories:<br>
 
-* Files needed to perform evaluation analyses<br>
 	* Experimentally confirmed MMIs<br>
 
 	| Data file | Descriptions | validated MMI counts |
 	|:-------------:|:-------------|:-----:|
 	| _V1_ | [TarBase v7.0](http://carolina.imis.athena-innovation.gr/diana_tools/web/index.php?r=tarbasev8%2Findex) | 307,010 |
-        | _V2_ | [miRTarbase v7.0](http://mirtarbase.mbc.nctu.edu.tw/php/index.php) | 380,639 |
+    | _V2_ | [miRTarbase v7.0](http://mirtarbase.mbc.nctu.edu.tw/php/index.php) | 380,639 |
 	| _V3_ | high-confidence set compiled from [miRTarbase](http://carolina.imis.athena-innovation.gr/diana_tools/web/index.php?r=tarbasev8%2Findex), [miRecord](http://mirecords.umn.edu/miRecords) and [oncomiRDB](http://bioinfo.au.tsinghua.edu.cn/oncomirdb/) | 9642 |
-        | _V4_ | [starBase v2.0](http://starbase.sysu.edu.cn/starbase2/index.php) | 10,028 |
+    | _V4_ | [starBase v2.0](http://starbase.sysu.edu.cn/starbase2/index.php) | 10,028 |
 	
     * Curated miRNA transfection experiments<br>
 
@@ -115,7 +114,7 @@ Those three files should be provided by the users, which contains the paired exp
 	|:-------------:|:-------------|:-----:|
 	| _miRNA biomarkers_ | miRNAs that are significantly correlated with tumor development, tumor staging, tumor grade and patient survival defined by [oncomiR](http://www.oncomir.org) | 288 |
 	| _oncomirs_ | oncomirs compiled from [MNDR v2.0](http://www.rna-society.org/mndr/) database | 399 |
-        | _Cancer genes_ | [COSMIC](https://cancer.sanger.ac.uk/census) database | 616 |
+    | _Cancer genes_ | [COSMIC](https://cancer.sanger.ac.uk/census) database | 616 |
 
 * Input data files<br>
 
