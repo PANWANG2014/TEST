@@ -121,9 +121,9 @@ Those three files should be provided by the users, which contains the paired exp
 	| Data file| Descriptions |
 	|:-------------: |:-------------|
 	| TCGA data | Paired miRNA-mRNA expression profiles from a total of 7,991 tumor samples belonging to 32 different cancer types |
-	| NCI60 data | Paired miRNA-mRNA expression profiles from 130 samples belonging to 59 cell line types |
+	| NCI60 data | Paired miRNA-mRNA expression profiles from 59 samples belonging to 59 cell line types |
 
-	All data files listed above are provided in a compressed file [DATA.7z](https://www.dropbox.com/sh/aa0k59j39nftmo9/AAALFIiSpicrAEn8nRUJRjUWa?dl=0). Detailed descriptions of these files are provided in the **Online Methods** of the paper.<br>
+	All data files listed above are provided in a compressed file [DATA.7z](https://www.dropbox.com/sh/aa0k59j39nftmo9/AAALFIiSpicrAEn8nRUJRjUWa?dl=0). Detailed descriptions of these files are provided in the **MATERIALS AND METHODS** of the paper.<br>
 
 ---
 ### <a name="6">4. Examples of predicted results</a><br>
