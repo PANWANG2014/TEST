@@ -90,9 +90,9 @@ Those three files should be provided by the users, which contains the paired exp
 ### <a name="5">3. Reproduction of the miRACLe paper`s analyses</a><br>
 1. The codes to reproduce these experiments in the paper are written in R and should be executed in the corresponding software environment.<br> 
 2. Generally, all these [codes](https://github.com/PANWANG2014/miRTIGO/tree/master/Source_codes_for_experiments) are arranged into three parts as 'FUNCTIONS', 'INPUT DATA' and 'MAIN PROGRAM'. The users need to download and fill in the relevant input files before implementing corresponding analyses.<br>
-3. Files required for the reproduction of the experiments can be broadly classified into three categories:<br>
+3. Files required for the reproduction of the analyses can be broadly classified into three categories:<br>
 
-* Files needed to execute the algorithms<br>
+* Files needed to execute the algorithms (basic data)<br>
 
 	| Data file | Descriptions | 
 	|:-------------:|:-------------| 
@@ -103,8 +103,8 @@ Those three files should be provided by the users, which contains the paired exp
 	| mrna\_list.txt | mRNA identifiers used in the above files|
 
 	All these files are compiled from [TargetScan v7.0](http://www.targetscan.org/cgi-bin/targetscan/data_download.cgi?db=vert_70).
-	
-* Files needed to perform evaluation analyses<br>
+
+* Files needed to perform evaluation analyses (reference data)<br>
 	* Experimentally confirmed MMIs<br>
 
 	| Data file | Descriptions | validated MMI counts |
@@ -127,18 +127,20 @@ Those three files should be provided by the users, which contains the paired exp
 	|:-------------:|:-------------|:-----:|
 	| miRNA biomarkers | miRNAs obtained from [oncomiR](http://www.oncomir.org) that are simultaneously correlated with tumor development, tumor staging, tumor grade and patient survival | 288 |
 	| oncomirs | high-confidence cancer associated miRNAs compiled from [MNDR v2.0](http://www.rna-society.org/mndr/) database | 399 |
-    | Cancer genes | [COSMIC](https://cancer.sanger.ac.uk/census) database | 616 |
+    | Cancer genes | [COSMIC](https://cancer.sanger.ac.uk/census) database | 616 |<br>
 
-* Input data files<br>
+    The reference data are stored along with analytic relevant source codes.
+
+* Expression data files for relevant analysis<br>
 
 	| Data file| Descriptions |
 	|:-------------: |:-------------|
 	| TCGA data | Paired miRNA-mRNA expression profiles from a total of 7,991 tumor samples belonging to 32 different cancer types |
 	| NCI60 data | Paired miRNA-mRNA expression profiles from 59 NCI-60 cell lines |
+    | Exosomal data | Paired miRNA-mRNA expression profiles of blood exosomes from prostate cancer patient and healthy person|
     | ESCC data | Paired miRNA-mRNA expression profiles from 119 ESCC (esophageal squamous cell carcinoma) patients and associated clinical information |
 
-	All data files listed above are provided in a compressed file [DATA.7z](https://www.dropbox.com/sh/aa0k59j39nftmo9/AAALFIiSpicrAEn8nRUJRjUWa?dl=0). Detailed descriptions of these files are provided in the **MATERIALS AND METHODS** of the paper.<br>
-
+	The expression data files are provided in a compressed file [DATA.7z](https://www.dropbox.com/sh/aa0k59j39nftmo9/AAALFIiSpicrAEn8nRUJRjUWa?dl=0). Detailed descriptions of these files are provided in the **MATERIALS AND METHODS** of the paper.<br>
 ---
 ### <a name="6">4. Examples of predicted results</a><br>
 miRACLe provides both population-level result and individual-level result, and it outputs the top 1% ranked MMIs in default. To show as an example, [Here](https://github.com/PANWANG2014/miRTIGO/blob/master/Predicted_results.7z) we provide the detailed population-level results of the top 5000 predicted MMIs for each of the 32 TCGA cancer types and the individual-level results of the top 5000 predictions for the NCI-60 cell panel.
