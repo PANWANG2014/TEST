@@ -142,7 +142,7 @@ Those three files should be provided by the users, which contains the paired exp
 
 	The expression data files are provided in a compressed file [DATA.7z](https://www.dropbox.com/sh/aa0k59j39nftmo9/AAALFIiSpicrAEn8nRUJRjUWa?dl=0).<br> 
 
-Detailed descriptions of the above files are provided in the **MATERIALS AND METHODS** of the paper.<br>
+    Detailed descriptions of the above files are provided in the **MATERIALS AND METHODS** of the paper.<br>
 ---
 ### <a name="6">4. Examples of predicted results</a><br>
 miRACLe provides both population-level result and individual-level result, and it outputs the top 1% ranked MMIs in default. To show as an example, [Here](https://github.com/PANWANG2014/miRTIGO/blob/master/Predicted_results.7z) we provide the detailed population-level results of the top 5000 predicted MMIs for each of the 32 TCGA cancer types and the individual-level results of the top 5000 predictions for the NCI-60 cell panel.
