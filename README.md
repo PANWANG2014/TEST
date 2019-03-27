@@ -129,7 +129,7 @@ Those three files should be provided by the users, which contains the paired exp
 	| oncomirs | high-confidence cancer associated miRNAs compiled from [MNDR v2.0](http://www.rna-society.org/mndr/) database | 399 |
     | Cancer genes | [COSMIC](https://cancer.sanger.ac.uk/census) database | 616 |<br>
 
-    The reference data are stored along with analytic relevant source codes.
+    The reference data files are stored along with relevant source codes.
 
 * Expression data files for relevant analysis<br>
 
@@ -140,7 +140,9 @@ Those three files should be provided by the users, which contains the paired exp
     | Exosomal data | Paired miRNA-mRNA expression profiles of blood exosomes from prostate cancer patient and healthy person|
     | ESCC data | Paired miRNA-mRNA expression profiles from 119 ESCC (esophageal squamous cell carcinoma) patients and associated clinical information |
 
-	The expression data files are provided in a compressed file [DATA.7z](https://www.dropbox.com/sh/aa0k59j39nftmo9/AAALFIiSpicrAEn8nRUJRjUWa?dl=0). Detailed descriptions of these files are provided in the **MATERIALS AND METHODS** of the paper.<br>
+	The expression data files are provided in a compressed file [DATA.7z](https://www.dropbox.com/sh/aa0k59j39nftmo9/AAALFIiSpicrAEn8nRUJRjUWa?dl=0).<br> 
+
+Detailed descriptions of the above files are provided in the **MATERIALS AND METHODS** of the paper.<br>
 ---
 ### <a name="6">4. Examples of predicted results</a><br>
 miRACLe provides both population-level result and individual-level result, and it outputs the top 1% ranked MMIs in default. To show as an example, [Here](https://github.com/PANWANG2014/miRTIGO/blob/master/Predicted_results.7z) we provide the detailed population-level results of the top 5000 predicted MMIs for each of the 32 TCGA cancer types and the individual-level results of the top 5000 predictions for the NCI-60 cell panel.
