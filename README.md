@@ -19,15 +19,15 @@ library('miRACLe')
 1. Let’s generate individual-specific miRNA-mRNA interactions using a single pair of miRNA-mRNA expression profile of HeLa cells.<br>
 
 ```r
-load(seqScore) # to load sequence-based interaction score, default is 'TargetScan7.CWCS.cons'
-load(test_data.Rdata) # to load test datasets
-mirExpr<- Test_HeLa_miRNA
-tarExpr<- Test_HeLa_mRNA
-final_output_ind <- miracle_ind(seqScore, mirExpr, tarExpr, OutputSelect = TRUE)
-write.table(final_output_ind, file = "HeLa prediction result.txt", quote = FALSE, sep = "\t", row.names = FALSE)
+ load(seqScore) # to load sequence-based interaction score, default is 'TargetScan7.CWCS.cons'
+ load(test_data.Rdata) # to load test datasets
+ mirExpr<- Test_HeLa_miRNA
+ tarExpr<- Test_HeLa_mRNA
+ final_output_ind <- miracle_ind(seqScore, mirExpr, tarExpr, OutputSelect = TRUE)
+ write.table(final_output_ind, file = "HeLa prediction result.txt", quote = FALSE, sep = "\t", row.names = FALSE)
 ```
 
-* The essential inputs for 'miracle_ind()' are `seqScore` (sequence-based interaction scores), `mirExpr`(the expression profile of miRNA), `tarExpr`(the expression profile of mRNA). Another input is optional: `OutputSelect`(logical variable, select “TRUE” to return the top 10 percent-ranked predictions by scores, and “FALSE” to return the whole prediction result. Default is TRUE.)<br>
+   * The essential inputs for 'miracle_ind()' are `seqScore` (sequence-based interaction scores), `mirExpr`(the expression profile of miRNA), `tarExpr`(the expression profile of mRNA). Another input is optional: `OutputSelect`(logical variable, select “TRUE” to return the top 10 percent-ranked predictions by scores, and “FALSE” to return the whole prediction result. Default is TRUE.)<br>
 
 
 
