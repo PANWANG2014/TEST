@@ -20,7 +20,7 @@ library('miRACLe')
 
 ```r
  load(seqScore.Rdata) # to load sequence-based interaction score, default is 'TargetScan7.CWCS.cons'
- load(test_data.Rdata) # to load test datasets
+ load(Test_data.Rdata) # to load test datasets
  mirExpr<- Test_HeLa_miRNA
  tarExpr<- Test_HeLa_mRNA
  final_output_ind <- miracle_ind(seqScore, mirExpr, tarExpr, OutputSelect = TRUE)
@@ -36,7 +36,7 @@ library('miRACLe')
 
 ```r
  load(seqScore.Rdata) # to load sequence-based interaction score, default is 'TargetScan7.CWCS.cons'
- load(test_data.Rdata) # to load test datasets
+ load(Test_data.Rdata) # to load test datasets
  mirExpr <- Test_DLBC_miRNA
  tarExpr <- Test_DLBC_mRNA
  sampleMatch <- Test_DLBC_sampleMatch
