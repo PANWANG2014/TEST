@@ -19,7 +19,7 @@ library('miRACLe')
 1. Let’s generate individual-specific miRNA-mRNA interactions using a single pair of miRNA-mRNA expression profile of HeLa cells.<br>
 
 ```r
- data(seqScore.Rdata) # to load sequence-based interaction score, default is 'TargetScan7.CWCS.cons'
+ data(seqScore.Rdata) # to load sequence-based interaction score, default is 'TargetScan7_CWCS_cons'
  data(Test_data.Rdata) # to load test datasets
  mirExpr <- Test_HeLa_miRNA
  tarExpr <- Test_HeLa_mRNA
@@ -35,7 +35,7 @@ library('miRACLe')
 2. If the expression data of multiple samples are provided, we can generate miRNA-mRNA interactions at both individual and population levels. To do this, type following lines.<br>
 
 ```r
- data(seqScore.Rdata) # to load sequence-based interaction score, default is 'TargetScan7.CWCS.cons'
+ data(seqScore.Rdata) # to load sequence-based interaction score, default is 'TargetScan7_CWCS_cons'
  data(Test_data.Rdata) # to load test datasets
  mirExpr <- Test_DLBC_miRNA
  tarExpr <- Test_DLBC_mRNA
