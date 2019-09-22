@@ -27,7 +27,7 @@ final_output_ind <- miracle_ind(seqScore, mirExpr, tarExpr, OutputSelect = TRUE)
 write.table(final_output_ind, file = "HeLa prediction result.txt", quote = FALSE, sep = "\t", row.names = FALSE)
 ```
 
-\#the essential inputs for 'miracle_ind()' are `seqScore` (sequence-based interaction scores), `mirExpr`(the expression profile of miRNA), `tarExpr`(the expression profile of mRNA). Another input is optional: `OutputSelect`(logical variable, select “TRUE” to return the top 10 percent-ranked predictions by scores, and “FALSE” to return the whole prediction result. Default is TRUE.)<br>
+   The essential inputs for 'miracle_ind()' are `seqScore` (sequence-based interaction scores), `mirExpr`(the expression profile of miRNA), `tarExpr`(the expression profile of mRNA). Another input is optional: `OutputSelect`(logical variable, select “TRUE” to return the top 10 percent-ranked predictions by scores, and “FALSE” to return the whole prediction result. Default is TRUE.)<br>
 
 
 
@@ -44,7 +44,7 @@ write.table(final_output_ind, file = "HeLa prediction result.txt", quote = FALSE
  write.table(final_output$Pop, file = "Population-level predictions.txt", quote = FALSE, sep = "\t", row.names = FALSE)	#Population-level result
 ```
 
-\# the essential inputs for 'miracle()' are `seqScore` (sequence-based interaction scores), `sampleMatch`(corresponding relationships between samples from miRNA expression data and mRNA expression data), `mirExpr`(the expression profile of miRNA), `tarExpr`(the expression profile of mRNA). Another three inputs are optional: `samSelect`(sample selection, users can select a subset of all samples to analyze, default is no selection applied), `exprFilter`(filter of expression profile, miRNAs/mRNAs that are not expressed in more than a given percentage of samples will be removed, default is 1), `OutputSelect`(logical variable, select “TRUE” to return the top 10 percent-ranked predictions by scores, and “FALSE” to return the whole prediction result. Default is TRUE.)<br>
+   The essential inputs for 'miracle()' are `seqScore` (sequence-based interaction scores), `sampleMatch`(corresponding relationships between samples from miRNA expression data and mRNA expression data), `mirExpr`(the expression profile of miRNA), `tarExpr`(the expression profile of mRNA). Another three inputs are optional: `samSelect`(sample selection, users can select a subset of all samples to analyze, default is no selection applied), `exprFilter`(filter of expression profile, miRNAs/mRNAs that are not expressed in more than a given percentage of samples will be removed, default is 1), `OutputSelect`(logical variable, select “TRUE” to return the top 10 percent-ranked predictions by scores, and “FALSE” to return the whole prediction result. Default is TRUE.)<br>
 
 ## About seqScore
 
