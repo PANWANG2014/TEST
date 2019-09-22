@@ -26,7 +26,7 @@ library('miRACLe')
   final_output_ind <- miracle_ind(seqScore, mirExpr, tarExpr, OutputSelect = TRUE)
 ```
 
-* The essential inputs for 'miracle_ind()' are `seqScore` (sequence-based interaction scores), `mirExpr`(the expression profile of miRNA), `tarExpr`(the expression profile of mRNA). Another input is optional: `OutputSelect`(logical variable, select “TRUE” to return the top 10 percent-ranked predictions by scores, and “FALSE” to return the whole prediction result. Default is TRUE.)<br>
+* The essential inputs for 'miracle_ind()' are `seqScore` (sequence-based interaction scores), `mirExpr`(the expression profile of miRNA), `tarExpr`(the expression profile of mRNA). Another input is optional: `OutputSelect`(logical variable, select ‘TRUE’ to return the top 10 percent-ranked predictions by scores, and ‘FALSE’ to return the whole prediction result. Default is TRUE.)<br>
 
 
 
@@ -45,7 +45,7 @@ library('miRACLe')
   final_output$Pop	#Population-level result
 ```
 
-* The essential inputs for 'miracle()' are `seqScore` (sequence-based interaction scores), `sampleMatch`(corresponding relationships between samples from miRNA expression data and mRNA expression data), `mirExpr`(the expression profile of miRNA), `tarExpr`(the expression profile of mRNA). Another three inputs are optional: `samSelect`(sample selection, users can select a subset of all samples to analyze, default is NULL, no selection applied), `exprFilter`(filter of expression profile, miRNAs/mRNAs that are not expressed in more than a given percentage of samples will be removed, default is 1), `OutputSelect`(logical variable, select “TRUE” to return the top 10 percent-ranked predictions by scores, and “FALSE” to return the whole prediction result. Default is TRUE.)<br>
+* The essential inputs for 'miracle()' are `seqScore` (sequence-based interaction scores), `sampleMatch`(corresponding relationships between samples from miRNA expression data and mRNA expression data), `mirExpr`(the expression profile of miRNA), `tarExpr`(the expression profile of mRNA). Another three inputs are optional: `samSelect`(sample selection, users can select a subset of all samples to analyze, default is NULL, no selection applied), `exprFilter`(filter of expression profile, miRNAs/mRNAs that are not expressed in more than a given percentage of samples will be removed, default is 1), `OutputSelect`(logical variable, select ‘TRUE’ to return the top 10 percent-ranked predictions by scores, and ‘FALSE’ to return the whole prediction result. Default is TRUE.)<br>
  
 * The output of ‘miracle()’ is a list containing two elements. The first "Ind" contains the individual-level prediction results ranked by miracle scores, and the second "Pop" contains the population-level prediction result ranked by miracle scores.
 
