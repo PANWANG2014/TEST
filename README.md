@@ -27,7 +27,7 @@ library('miRACLe')
  write.table(final_output_ind, file = "HeLa prediction result.txt", quote = FALSE, sep = "\t", row.names = FALSE)
 ```
 
-   * The essential inputs for 'miracle_ind()' are `seqScore` (sequence-based interaction scores), `mirExpr`(the expression profile of miRNA), `tarExpr`(the expression profile of mRNA). Another input is optional: `OutputSelect`(logical variable, select “TRUE” to return the top 10 percent-ranked predictions by scores, and “FALSE” to return the whole prediction result. Default is TRUE.)<br>
+* The essential inputs for 'miracle_ind()' are `seqScore` (sequence-based interaction scores), `mirExpr`(the expression profile of miRNA), `tarExpr`(the expression profile of mRNA). Another input is optional: `OutputSelect`(logical variable, select “TRUE” to return the top 10 percent-ranked predictions by scores, and “FALSE” to return the whole prediction result. Default is TRUE.)<br>
 
 
 
@@ -49,7 +49,7 @@ library('miRACLe')
 
 ## About seqScore
 
-The parameter `seqScore` is a Z x 3 data.frame that contains sequence-based interaction scores for putative miRNA-mRNA pairs. These scores are originally obtained from [TargetSan v7.2]( http://www.targetscan.org/vert_72/) (TargetScan7\_CWCS\_cons and TargetScan7\_CWCS), [DIANA-microT-CDS]( http://diana.imis.athena-innovation.gr/DianaTools/index.php?r=microT_CDS/index) (DIANA\_microT\_CDS), [MirTarget v4]( http://mirdb.org/)(MirTarget4), [miRanda-mirSVR]( http://www.microrna.org/microrna/getDownloads.do)(miRanda\_mirSVR) and compiled by the developers to fit the model. Default is **TargetScan7\_CWCS\_cons**. The other scores can be downloaded [here](https://figshare.com/s/0b7c68cd5152da27a191).<br>
+* The parameter `seqScore` is a Z x 3 data.frame that contains sequence-based interaction scores for putative miRNA-mRNA pairs. These scores are originally obtained from [TargetSan v7.2]( http://www.targetscan.org/vert_72/) (TargetScan7\_CWCS\_cons and TargetScan7\_CWCS), [DIANA-microT-CDS]( http://diana.imis.athena-innovation.gr/DianaTools/index.php?r=microT_CDS/index) (DIANA\_microT\_CDS), [MirTarget v4]( http://mirdb.org/)(MirTarget4), [miRanda-mirSVR]( http://www.microrna.org/microrna/getDownloads.do)(miRanda\_mirSVR) and compiled by the developers to fit the model. Default is **TargetScan7\_CWCS\_cons**. The other scores can be downloaded [here](https://figshare.com/s/0b7c68cd5152da27a191).<br>
 
-User can also provide their own sequence-based interaction score, as long as the format of input file meets the requirements. Specifically, the first line must contain the label Names for mRNAs, miRNAs and their associated interaction scores. The remainder of the file contains RNA identifiers corresponding to those used in the expression files and the scores for each miRNA-mRNA pair. Note that the first column must contain identifiers for mRNAs, the second column must contain identifiers for miRNAs with the third column containing the associated scores.<br>
+* User can also provide their own sequence-based interaction score, as long as the format of input file meets the requirements. Specifically, the first line must contain the label Names for mRNAs, miRNAs and their associated interaction scores. The remainder of the file contains RNA identifiers corresponding to those used in the expression files and the scores for each miRNA-mRNA pair. Note that the first column must contain identifiers for mRNAs, the second column must contain identifiers for miRNAs with the third column containing the associated scores.<br>
 
