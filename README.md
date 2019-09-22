@@ -19,11 +19,11 @@ library('miRACLe')
 1. Let’s generate individual-specific miRNA-mRNA interactions using a single pair of miRNA-mRNA expression profile of HeLa cells.<br>
 
 ```r
- data(seqScore.Rdata) # to load sequence-based interaction score, default is 'TargetScan7_CWCS_cons'
- data(Test_data.Rdata) # to load test datasets
- mirExpr <- Test_HeLa_miRNA
- tarExpr <- Test_HeLa_mRNA
- final_output_ind <- miracle_ind(seqScore, mirExpr, tarExpr, OutputSelect = TRUE)
+  data(seqScore.Rdata) # to load sequence-based interaction score, default is 'TargetScan7_CWCS_cons'
+  data(Test_data.Rdata) # to load test datasets
+  mirExpr <- Test_HeLa_miRNA
+  tarExpr <- Test_HeLa_mRNA
+  final_output_ind <- miracle_ind(seqScore, mirExpr, tarExpr, OutputSelect = TRUE)
 ```
 
 * The essential inputs for 'miracle_ind()' are `seqScore` (sequence-based interaction scores), `mirExpr`(the expression profile of miRNA), `tarExpr`(the expression profile of mRNA). Another input is optional: `OutputSelect`(logical variable, select “TRUE” to return the top 10 percent-ranked predictions by scores, and “FALSE” to return the whole prediction result. Default is TRUE.)<br>
@@ -34,15 +34,15 @@ library('miRACLe')
 2. If the expression data of multiple samples are provided, we can generate miRNA-mRNA interactions at both individual and population levels. To do this, type following lines.<br>
 
 ```r
- data(seqScore.Rdata) # to load sequence-based interaction score, default is 'TargetScan7_CWCS_cons'
- data(Test_data.Rdata) # to load test datasets
- mirExpr <- Test_DLBC_miRNA
- tarExpr <- Test_DLBC_mRNA
- sampleMatch <- Test_DLBC_sampleMatch
- sampleSelect = c("TCGA-FA-A4BB-01A-11R-A31S-13", "TCGA-FA-A4XK-01A-11R-A31S-13", "TCGA-FA-A6HN-01A-11R-A31S-13") # samples selected from the test dataset to analyze
- final_output <- miracle(seqScore, sampleMatch, mirExpr, tarExpr, samSelect = sampleSelect, exprFilter = 1, OutputSelect = TRUE)
-final_output$Ind	#Individual-level result
-final_output$Pop	#Population-level result
+  data(seqScore.Rdata) # to load sequence-based interaction score, default is 'TargetScan7_CWCS_cons'
+  data(Test_data.Rdata) # to load test datasets
+  mirExpr <- Test_DLBC_miRNA
+  tarExpr <- Test_DLBC_mRNA
+  sampleMatch <- Test_DLBC_sampleMatch
+  sampleSelect = c("TCGA-FA-A4BB-01A-11R-A31S-13", "TCGA-FA-A4XK-01A-11R-A31S-13", "TCGA-FA-A6HN-01A-11R-A31S-13") # samples selected from the test dataset to analyze
+  final_output <- miracle(seqScore, sampleMatch, mirExpr, tarExpr, samSelect = sampleSelect, exprFilter = 1, OutputSelect = TRUE)
+  final_output$Ind	#Individual-level result
+  final_output$Pop	#Population-level result
 ```
 
 * The output of ‘miracle()’ is a list containing two elements. The first "Ind" contains the individual-level prediction results ranked by miracle scores, and the second "Pop" contains the population-level prediction result ranked by miracle scores.
