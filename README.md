@@ -8,7 +8,7 @@ miRACLe: improving the prediction of miRNA-mRNA interactions by a random contact
 'miRACLe' is an R package developed to infer individual-specific miRNA-mRNA interactions (MMIs) from a single paired miRNA-mRNA expression profile by applying a random contact model. Evaluation by a variety of measures shows that fitting a sequence-based algorithm into the framework of miRACLe can significantly improve its prediction power, and the combination of miRACLe and the cumulative weighted context++ scores from TargetScan consistently outperforms state-of-the-art methods in prediction accuracy, regulatory potential and biological relevance. Empirical test suggests that on a laptop Intel Core i7-4712HQ personal computer with a 2.30 GHz CPU and 16 GB of RAM, our source code implementation requires less than 10 seconds of CPU time to complete the prediction for an individual sample.
 
 ## Installation
-```
+```{r}
 install.packages('devtools') #skip this step if it is already installed
 library('devtools')
 install_github('lookgene/miRACLe')
@@ -18,7 +18,7 @@ library('miRACLe')
 ## Quick start with an example
 1. Let’s generate individual-specific miRNA-mRNA interactions using a single pair of miRNA-mRNA expression profile of HeLa cells.<br>
 
-```
+```{r}
 load(seqScore) # to load sequence-based interaction score, default is 'TargetScan7.CWCS.cons'
 load(test_data.Rdata) # to load test datasets
 mirExpr<- Test_HeLa_miRNA
@@ -33,7 +33,7 @@ write.table(final_output_ind, file = "HeLa prediction result.txt", quote = FALSE
 
 2. If the expression data of multiple samples are provided, we can generate miRNA-mRNA interactions at both individual and population levels. To do this, type following lines.<br>
 
-```
+```{r}
 load(seqScore) # to load sequence-based interaction score, default is 'TargetScan7.CWCS.cons'
 load(test_data.Rdata) # to load test datasets
 mirExpr <- Test_DLBC_miRNA
