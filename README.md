@@ -21,8 +21,8 @@ library('miRACLe')
 ```r
  load(seqScore.Rdata) # to load sequence-based interaction score, default is 'TargetScan7.CWCS.cons'
  load(Test_data.Rdata) # to load test datasets
- mirExpr<- Test_HeLa_miRNA
- tarExpr<- Test_HeLa_mRNA
+ mirExpr <- Test_HeLa_miRNA
+ tarExpr <- Test_HeLa_mRNA
  final_output_ind <- miracle_ind(seqScore, mirExpr, tarExpr, OutputSelect = TRUE)
  write.table(final_output_ind, file = "HeLa prediction result.txt", quote = FALSE, sep = "\t", row.names = FALSE)
 ```
