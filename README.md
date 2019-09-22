@@ -5,7 +5,7 @@
 miRACLe: improving the prediction of miRNA-mRNA interactions by a random contact model
 
 ## Introduction
-'miRACLe' is an R package developed to infer individual-specific miRNA-mRNA interactions (MMIs) from a single paired miRNA-mRNA expression profile by applying a random contact model. Evaluation by a variety of measures shows that fitting a sequence-based algorithm into the framework of miRACLe can significantly improve its prediction power, and the combination of miRACLe and the cumulative weighted context++ scores from TargetScan consistently outperforms state-of-the-art methods in prediction accuracy, regulatory potential and biological relevance. Empirical test suggests that on a laptop Intel Core i7-4712HQ personal computer with a 2.30 GHz CPU and 16 GB of RAM, our source code implementation requires less than 10 seconds of CPU time to complete the prediction for an individual sample.
+'miRACLe' is an R package developed to infer individual-specific miRNA-mRNA interactions (MMIs) from a single paired miRNA-mRNA expression profile by applying a random contact model. Evaluation by a variety of measures shows that fitting a sequence-based algorithm into the framework of miRACLe can significantly improve its prediction power, and the combination of miRACLe and the cumulative weighted context++ scores (CWCSs) from TargetScan consistently outperforms state-of-the-art methods in prediction accuracy, regulatory potential and biological relevance. Empirical test suggests that on a laptop Intel Core i7-4712HQ personal computer with a 2.30 GHz CPU and 16 GB of RAM, our source code implementation requires less than 10 seconds of CPU time to complete the prediction for an individual sample.
 
 ## Installation
 ```r
